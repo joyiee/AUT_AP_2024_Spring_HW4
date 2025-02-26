@@ -12,7 +12,7 @@ public:
     //Getter functions
     std::string get_type() const;
     std::string get_sender() const;
-    std::string get_recevier() const;
+    std::string get_receiver() const;
     std::string get_time() const;
 
     virtual void print(std::ostream &os) const; 
@@ -34,8 +34,6 @@ public:
     TextMessage(std::string text, std::string sender, std::string receiver);
     void print(std::ostream &os) const override;
     std::string get_text() const;
-private:
-    std::string text;
 };
 
 class VoiceMessage : public Message

@@ -1,7 +1,5 @@
 #include <gtest/gtest.h>
-
 #include <iostream>
-
 #include "message.h"
 #include "server.h"
 #include "stl.h"
